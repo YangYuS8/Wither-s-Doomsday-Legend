@@ -1,0 +1,3 @@
+> §a欢迎 {PLAYER} 来到 MineCraft-1.20.1 服务器
+> §b本服务端由Arclight驱动，由 酷车手BB弹 整合
+> §e此条消息可在 /plugins/AuthMe/welcome.txt 中修改

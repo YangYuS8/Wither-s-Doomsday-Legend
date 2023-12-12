@@ -1,0 +1,30 @@
+messages:
+  error:
+    consoleUnsupported: '您不能从控制台中使用此命令。'
+    lootNotGenerated: '&cLoot not generated! Please disable &b/silentcontainer&c.'
+    invalidMaterial: '&cInvalid material: "%target%"'
+    invalidNumber: '&c无效数字: "%target%"'
+    invalidPlayer: '&c未找到玩家。'
+    permissionOpenSelf: '&c你没权限打开你自己的物品栏。'
+    permissionEnderAll: '&c你没权限打开其他玩家的末影箱。'
+    permissionExempt: '&c%target% 的物品栏受保护。'
+    permissionCrossWorld: '&c%target% 不在你所在的世界。'
+    permissionPlayerOnline: '&c你没权限打开在线玩家的物品栏。'
+    permissionPlayerOffline: '&c你没权限打开离线玩家的物品栏。'
+    commandException: '&c错误，请到控制台查看信息'
+  info:
+    containerBlocked: '你打开了上锁的箱子。'
+    containerBlockedSilent: '你悄悄地打开上锁的箱子。'
+    containerSilent: '你悄悄地打开箱子。'
+    settingState: '%setting%: %state%'
+    player:
+      noMatches: 未找到玩家 %target%.
+      matches: '玩家持有 %target%: %detail%'
+    container:
+      noMatches: 未找到箱子 %target%.
+      matches: '箱子持有 %target%: %detail%'
+    'true': '打开'
+    'false': '关闭'
+container:
+  player: '%player% 的物品栏'
+  enderchest: '%player% 的末影箱'

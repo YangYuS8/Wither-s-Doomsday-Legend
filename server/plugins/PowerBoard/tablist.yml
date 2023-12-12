@@ -1,0 +1,49 @@
+# Here you can customize the tablist.
+# You can add as many animation steps as you like.
+#
+# For every line you can set a different speed.
+# To add a new line, just add a new number like this: '2':
+# But to prevent issues, you can also copy & paste the last row for example and then modify the text.
+#
+# Note: For static lines (no animations or updates needed): Set the 'speed' value to '-1'. This will save performance.
+# Note: Specify the speed in ticks, not seconds: 20 ticks = one second.
+# Note: The speed value can not be higher than 9999.
+
+header:
+  '1':
+    speed: 20
+    lines:
+    - '&d整合By: &6酷车手BB弹'
+    - '&d整合By: &e酷车手BB弹'
+
+  '2':
+    speed: -1
+    lines:
+    - ' '
+
+footer:
+  '1':
+    speed: -1
+    lines:
+    - ' '
+
+  '2':
+    speed: 20
+    lines:
+    - '&6在线玩家: &a%server_online_players%&7/&a%server_max_players%'
+
+  '3':
+    speed: 40
+    lines:
+    - '&b你的昵称: &a%player_name%'
+    - '&b当前时间: &a%time%'
+    - '&b当前日期: &a%date%'
+    - '&b所在世界: &a%player_world%'
+    - '&b你的延迟: &a%player_ping%'
+    - '&b饥饿等级: &a%player_food%'
+    - '&b饱食度: &a%player_saturation%'
+    
+  '4':
+    speed: 20
+    lines:
+    - '&6服务器TPS: &a%server_tps%'

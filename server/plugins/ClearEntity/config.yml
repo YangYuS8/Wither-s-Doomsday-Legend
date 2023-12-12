@@ -1,0 +1,114 @@
+#==================================================================================================
+#    如有BUG提交,请附服务端版本/服务端核心/插件版本/config配置文件附件上传至Github-Issue或MCBBS插件帖评论回复
+#    按照此格式提交问题将优先回复
+#    MCBBS插件帖:https://www.mcbbs.net/thread-1283396-1-1.html
+#    Github-Issue:https://github.com/MrLv0816/ClearEntity/issues
+#
+#  #例
+#  #服务端版本: 1.16.5
+#  #服务端核心: CatServer-1.16.5-da9654d4-server
+#  #插件版本: 2.5.8
+#  #附件: config.yml
+#  #问题描述:
+#===================================================================================================
+
+#实体管理
+EntityManager:
+  #清理限制 (-1 关闭)
+  Limit:
+    #低于 min 值不会执行任何清理任务
+    min: 400
+    #大于 max 值立即进行清理 (Mod服不建议开启)
+    max: 4000
+
+    #每tick清理区块数量 (数量越大执行越快)
+    #清理时造成服务器卡顿降低此项数值可有效解决(数量越低处理越慢)
+    loadChunk: 600
+
+  #实体固定清理周期 (秒)
+  Time: 3600
+
+  #公共垃圾箱
+  Bin:
+    #是否启用垃圾箱
+    enable: true
+    #垃圾箱最大 页
+    page: 4
+    #清理周期（秒）
+    cTime: 7200
+
+  ##清理提示
+  Message:
+    #开启 Boss 血条倒计时
+    bossBar: true
+    #每次发送 before 的时间
+    time:
+      - 60
+      - 30
+      - 15
+      - 5
+    #垃圾箱清理倒计时
+    binTime:
+      - 30
+      - 10
+      - 5
+
+  #清理命名实体 (仅对原版生效）
+  Rename: true
+
+  #清理规则
+  Rules:
+    #模组实体不按照 animals与monster清理 （推荐）
+    mode: true
+    #白名单
+    whitelist:
+      #动物
+      - "animals"
+    #黑名单
+    blacklist:
+      #怪物
+      - "monster"
+     #匹配所有实体
+     #- "minecraft:*"
+
+    #掉落物
+    item:
+      #清理掉落物
+      enable: true
+      #quick-shop:    不清理QuickShop悬浮物(仅测试1.19.2)
+        #lore: '*"shopLocation":"Location{'
+
+      #钻石镐:                     #节点名(随意)
+        #id: "minecraft:diamond_pickaxe"   #物品id
+        #name: "钻石制成"                   #物品名
+        #lore: "不被清理"                   #描述
+        #name/lore 开头为*则开启模糊匹配 如： name: "*不被清理"
+
+    #针对某个世界单独进行规则处理
+    custom:
+      #world:       #世界名
+        #whitelist: #白名单
+        #blacklist: #黑名单
+        #item:      #掉落物
+          #开启掉落物清理
+          #enable: true
+
+  #开启防止玩家踩踏农作物
+  enablePlayerFarmProtect: true
+  #开启防止实体踩踏农作物
+  enableEntityFarmProtect: true
+  #开启防止踩踏作物的世界
+  farm-protect-worlds:
+  #  - "world"
+
+  #实体爆炸保护
+  EntityExplode:
+  #TNT
+  #  - "minecraft:tnt"
+  #苦力怕
+  #  - "minecraft:creeper"
+
+
+
+  #更新检测 有新版本时会在控制台提示
+  Update: true
