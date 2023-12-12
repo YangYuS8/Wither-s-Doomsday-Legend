@@ -1,0 +1,95 @@
+# Here you can customize the scoreboard.
+# You can add as many animation steps as you like.
+#
+# For every score (row) you can set a different speed.
+# You can use up to 14 rows. To add a new row, just add a new number like this: '7':
+# But to prevent issues, you can also copy & paste the last row for example and then modify the text.
+#
+# Note: For static lines (no animations or updates needed): Set the 'speed' value to '-1'. This will save performance.
+# Note: You need to specify the speed in ticks, not seconds: 20 ticks = one second.
+# Note: The speed value can not be higher than 9999.
+#
+# Wiki for using multiple scoreboards: https://github.com/Xitee1/PowerBoard/wiki/Create-and-use-multiple-scoreboards
+# Wiki for using conditions: https://github.com/Xitee1/PowerBoard/wiki/Conditions
+
+title:
+  speed: 20
+  titles:
+  - '-玩家信息-'
+  - '&d-&f玩家信息&d-'
+
+'0':
+  speed: 5
+  scores:
+  - '&e=&a==============='
+  - '&a=&e=&a=============='
+  - '&a==&e=&a============='
+  - '&a===&e=&a============'
+  - '&a====&e=&a==========='
+  - '&a=====&e=&a=========='
+  - '&a======&e=&a========='
+  - '&a=======&e=&a========'
+  - '&a========&e=&a======='
+  - '&a=========&e=&a======'
+  - '&a==========&e=&a====='
+  - '&a===========&e=&a===='
+  - '&a============&e=&a==='
+  - '&a=============&e=&a=='
+  - '&a==============&e=&a='
+  - '&a===============&e='
+
+'1':
+  speed: -1
+  scores:
+  - '&6名 称: &a%player_displayname%'
+
+
+'2':
+  speed: 5
+  scores:
+  - '&6位 置: &3%player_x%,%player_y%,%player_z%'
+
+
+'3':
+  speed: 20
+  scores:
+  - '&6领 地: &d%residence_user_amount%'
+
+'4':
+  speed: 20
+  scores:
+  - '&6人 数: &c%server_online_players%'
+
+'5':
+  speed: 20
+  scores:
+  - '&6余 额: &e%player_money%'
+
+
+'6':
+  speed: 20
+  scores:
+  - '&6时 间: &f%time%'
+
+'7':
+  speed: 5
+  scores:
+  - '&e=&a==============='
+  - '&a=&e=&a=============='
+  - '&a==&e=&a============='
+  - '&a===&e=&a============'
+  - '&a====&e=&a==========='
+  - '&a=====&e=&a=========='
+  - '&a======&e=&a========='
+  - '&a=======&e=&a========'
+  - '&a========&e=&a======='
+  - '&a=========&e=&a======'
+  - '&a==========&e=&a====='
+  - '&a===========&e=&a===='
+  - '&a============&e=&a==='
+  - '&a=============&e=&a=='
+  - '&a==============&e=&a='
+  - '&a===============&e='
+
+conditions:
+- 'add conditions here'

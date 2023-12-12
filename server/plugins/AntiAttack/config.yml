@@ -1,0 +1,58 @@
+AntiAttack:
+  PluginPrefix: §a[AntiAttack]
+  AutoUpdate: true
+  Boardcast: true
+RestrictMode:
+  enable: true
+  Timer:
+    CountPeriod: 5
+    CountLimit: 1
+    DenyMessage: §c服务器遭到集群压测,请稍等再登录!§b[RMTR]
+AntiFastJoin:
+  enable: true
+  Interval: 4000
+  DenyMessage: §c你加入过于频繁了!请稍等几秒!§b[AFJ]
+AntiMOTDAttack:
+  enable: true
+  PerIP5sLimit: 10
+  Total5sLimit: 100
+AntiPingAttack:
+  enable: true
+  PerIPInterval: 500
+  TotalInterval: 50
+AntiTabCompleteAttack:
+  enable: true
+  PerIPInterval: 1000
+  TotalInterval: 100
+HandShakeLimitor:
+  enable: true
+  PerIPSecondLimit: 3
+AntiPacketFloodAttack:
+  enable: true
+  kickMessage: §c%key_packet%发包量过多,已超出上限踢出值!§b[APFA]
+  PacketLimit:
+    PluginMessage:MC[|]BEdit:\S*:
+      period: 2000
+      kick: 1
+      share: true
+    PluginMessage:MC[|]BSign:\S*:
+      period: 2000
+      kick: 1
+      share: true
+    PluginMessage:\S*: ACCEPT
+    '[\s\S]*':
+      period: 500
+      cancel: 25
+      share: false
+AntiCreativeSlotAttack:
+  enable: true
+  KickMessage: §c非法发包!怀疑你在攻击服务器,请重新登录§b[ACSA]
+AntiKickAttack:
+  enable: true
+  DenyMessage: §c有一个同名玩家已经在线了!§b[AKA]
+LoggerFilter:
+  enable: true
+  exceptions:
+  - io.netty.handler.codec.DecoderException
+  - io.netty.handler.codec.CorruptedFrameException
+Versioning: 415

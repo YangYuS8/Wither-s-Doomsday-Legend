@@ -1,0 +1,8 @@
+normal:
+  prefix: '&b[自动公告]'
+  suffix: ''
+  interval: 120
+  random: false
+pro:
+  startuptime: 20
+  starttime: 2
